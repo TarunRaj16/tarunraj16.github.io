@@ -1,22 +1,94 @@
 <!doctype html>
 
 <html>
-
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title> Tarun Rajendran </title>
 		<link rel="stylesheet" href="css/foundation.css" />
+		
+		<!-- Important Owl stylesheet -->
+		<link rel="stylesheet" href="owl-carousel/owl.carousel.css"/>
+ 
+		<!-- Default Theme -->
+		<link rel="stylesheet" href="owl-carousel/owl.theme.css"/>
+ 
+		<!--  jQuery 1.7+  -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+ 
+		<!-- Include js plugin -->
+		<script src="owl-carousel/owl.carousel.js"></script>
+		
 		<script src="js/vendor/modernizr.js"> </script>
 		
 	</head>
+	
+	<body>
+	
+	<div class = "contain-to-grid sticky" >
+	 <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Tarun</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-	<div class = "row">
-		<div class="large-12 columns">
-			<h1> Tarun Rajendran </h1>
-		</div>
-	</div>
+	<section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Home</a></li>
+	  <li class="inactive"><a href="#">Contact Me</a></li>
+      <li class="has-dropdown not-click">
+        <a href="#">Cool Websites</a>
+        <ul class="dropdown">
+          <li><a href="https://www.google.com">Google</a></li>
+        </ul>
+      </li>
+    </ul>
+
+		</section>
+	</nav>
+</div>
+
+<div class = "row">
+<div class = "large-30 columns">
+
+
+<div id="owl-example" class="owl-carousel">
+  <div class="item"><img src="assets/fullimage1.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+  <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+  <div> Content Here </div>
+	<div> Content Here </div>
+	<div> Content Here </div>
+	<div> Content Here </div><div> Content Here </div><div> Content Here </div><div> Content Here </div><div> Content Here </div><div> Content Here </div><div> Content Here </div><div> Content Here </div><div> Content Here </div>
+  </div>
+<style>
+#owl-example .item img{
+    display: block;
+    width: 4344px;
+    height: auto;
+}</style>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel();
+  console.log("debug");
+  
+  navigation : true // Show next and prev buttons
+  slideSpeed : 300
+  paginationSpeed : 400
+  singleItem:true
+ 
+});
+</script>
+
+</div>
+</div>
+
 	
-	
-	
+	</body>
 </html>
