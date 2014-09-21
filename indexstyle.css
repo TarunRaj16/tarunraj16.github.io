@@ -1,0 +1,21 @@
+
+
+body {
+  background-image:url(assets/bg-10-full.jpg);
+  color: #F5FFFA;
+  padding: 0;
+  margin: 0;
+ font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+
+#owl-example .item img{
+		display: block;
+		width: auto;
+		height: auto;
+		}
